@@ -1,0 +1,28 @@
+id: one.naiara.Replay.Devel
+command: replay
+
+runtime: org.gnome.Platform
+runtime-version: "46"
+sdk: org.gnome.Sdk
+
+sdk-extensions:
+  - org.freedesktop.Sdk.Extension.rust-stable
+
+build-options:
+  prepend-path: /usr/lib/sdk/rust-stable/bin
+  prepend-ld-library-path: /usr/lib/sdk/rust-stable/lib
+
+modules:
+  - name: replay
+
+    buildsystem: meson
+    build-options:
+      build-args:
+        - --share=network
+      env:
+        RUST_BACKTRACE: "1"
+        RUST_LOG: replay=debug
+
+    sources:
+      - type: dir
+        path: ../..
