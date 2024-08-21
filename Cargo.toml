@@ -4,3 +4,10 @@
     edition = "2021"
 
 [dependencies]
+    anyhow = "1.0.86"
+    default-env = "0.1.1"
+
+    [dependencies.gettext]
+        version = "0.7.0"
+        features = ["gettext-system"]
+        package = "gettext-rs"

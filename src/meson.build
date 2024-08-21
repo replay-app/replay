@@ -13,7 +13,11 @@ cargo_build = custom_target(
   build_always_stale: true,
   command: [find_program('cargo'), 'build', cargo_args],
   console: true,
-  env: {'CARGO_HOME': meson.project_build_root() / 'cargo-home'},
+  env: {
+    'CARGO_HOME': meson.project_build_root() / 'cargo-home',
+    'GETTEXT_PACKAGE': gettext_package,
+    'LOCALEDIR': get_option('prefix') / get_option('localedir'),
+  },
   output: rust_target,
 )
 
