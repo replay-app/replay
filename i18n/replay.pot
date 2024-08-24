@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: replay\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-08-23 23:46-0300\n"
+"POT-Creation-Date: 2024-08-24 20:05-0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -37,6 +37,6 @@ msgstr ""
 msgid "stream;watch;clips;browse;play;channel;library;"
 msgstr ""
 
-#: src/main.rs:9
+#: src/app.rs:23
 msgid "Hello, world!"
 msgstr ""

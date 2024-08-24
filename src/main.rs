@@ -1,12 +1,11 @@
 use crate::prelude::*;
 
+mod app;
 mod prelude;
 mod shared;
+mod subclass;
 
-fn main() -> anyhow::Result<()> {
+fn main() -> anyhow::Result<glib::ExitCode> {
     i18n::init()?;
-
-    println!("{}", i18n::gettext("Hello, world!"));
-
-    Ok(())
+    Ok(rpy::App::new().run())
 }

@@ -14,6 +14,7 @@ cargo_build = custom_target(
   command: [find_program('cargo'), 'build', cargo_args],
   console: true,
   env: {
+    'APP_ID': app_id,
     'CARGO_HOME': meson.project_build_root() / 'cargo-home',
     'GETTEXT_PACKAGE': gettext_package,
     'LOCALEDIR': get_option('prefix') / get_option('localedir'),

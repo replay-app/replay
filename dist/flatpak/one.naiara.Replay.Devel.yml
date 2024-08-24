@@ -12,6 +12,11 @@ build-options:
   prepend-path: /usr/lib/sdk/rust-stable/bin
   prepend-ld-library-path: /usr/lib/sdk/rust-stable/lib
 
+finish-args:
+  - --share=ipc
+  - --socket=wayland
+  - --socket=fallback-x11
+
 modules:
   - name: replay
 

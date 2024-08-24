@@ -7,7 +7,24 @@
     anyhow = "1.0.86"
     default-env = "0.1.1"
 
+    [dependencies.adw]
+        version = "0.7.0"
+        package = "libadwaita"
+
     [dependencies.gettext]
         version = "0.7.0"
         features = ["gettext-system"]
         package = "gettext-rs"
+
+    [dependencies.gio]
+        version = "0.20.1"
+        features = ["v2_66"]
+
+    [dependencies.glib]
+        version = "0.20.1"
+        features = ["v2_66"]
+
+    [dependencies.gtk]
+        version = "0.9.0"
+        features = ["v4_6"]
+        package = "gtk4"
