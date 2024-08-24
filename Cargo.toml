@@ -9,6 +9,7 @@
 
     [dependencies.adw]
         version = "0.7.0"
+        features = ["v1_4"]
         package = "libadwaita"
 
     [dependencies.gettext]
@@ -18,13 +19,13 @@
 
     [dependencies.gio]
         version = "0.20.1"
-        features = ["v2_66"]
+        features = ["v2_76"]
 
     [dependencies.glib]
         version = "0.20.1"
-        features = ["v2_66"]
+        features = ["v2_76"]
 
     [dependencies.gtk]
         version = "0.9.0"
-        features = ["v4_6"]
+        features = ["v4_12"]
         package = "gtk4"

@@ -36,7 +36,3 @@ msgstr ""
 #: dist/desktop-entry/one.naiara.Replay.desktop.in.in:16
 msgid "stream;watch;clips;browse;play;channel;library;"
 msgstr ""
-
-#: src/app.rs:23
-msgid "Hello, world!"
-msgstr ""

@@ -19,7 +19,12 @@ mod imp {
 
     impl ApplicationImpl for App {
         fn activate(&self) {
-            println!("{}", i18n::gettext("Hello, world!"));
+            let window = match self.obj().active_window() {
+                Some(window) => window,
+                None => rpy::ShellWindow::new(&*self.obj()).upcast(),
+            };
+
+            window.present();
         }
     }
 
