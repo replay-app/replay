@@ -1,1 +1,2 @@
 meson.build linguist-documentation
+meson_options.txt linguist-documentation

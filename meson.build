@@ -8,7 +8,11 @@ project(
 
 i18n = import('i18n')
 
+rdnn_app_name = 'one.naiara.Replay'
+app_id_suffix = get_option('profile') == 'devel' ? '.Devel' : ''
+app_id = f'@rdnn_app_name@@app_id_suffix@'
 gettext_package = meson.project_name()
 
 subdir('i18n')
 subdir('src')
+subdir('dist')

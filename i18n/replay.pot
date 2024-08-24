@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: replay\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-08-21 02:38-0300\n"
+"POT-Creation-Date: 2024-08-23 23:46-0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,6 +16,26 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=CHARSET\n"
 "Content-Transfer-Encoding: 8bit\n"
+
+#. Translators: App Name. Do NOT translate.
+#: dist/desktop-entry/one.naiara.Replay.desktop.in.in:5
+msgid "Replay"
+msgstr ""
+
+#. Translators: Generic Name: "Replay is a...".
+#: dist/desktop-entry/one.naiara.Replay.desktop.in.in:7
+msgid "Video Aggregator"
+msgstr ""
+
+#. Translators: Comment: "Replay helps you...".
+#: dist/desktop-entry/one.naiara.Replay.desktop.in.in:9
+msgid "Follow your favorite content creators"
+msgstr ""
+
+#. Translators: Keywords. End the string with ';'.
+#: dist/desktop-entry/one.naiara.Replay.desktop.in.in:16
+msgid "stream;watch;clips;browse;play;channel;library;"
+msgstr ""
 
 #: src/main.rs:9
 msgid "Hello, world!"

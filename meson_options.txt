@@ -1,0 +1,7 @@
+option(
+  'profile',
+  choices: ['stable', 'devel'],
+  description: 'The build profile to be used',
+  type: 'combo',
+  value: 'stable',
+)

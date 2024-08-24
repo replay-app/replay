@@ -23,6 +23,9 @@ modules:
         RUST_BACKTRACE: "1"
         RUST_LOG: replay=debug
 
+    config-opts:
+      - -Dprofile=devel
+
     sources:
       - type: dir
         path: ../..

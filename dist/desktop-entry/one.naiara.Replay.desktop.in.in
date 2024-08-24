@@ -1,0 +1,16 @@
+[Desktop Entry]
+Type = Application
+# Translators: App Name. Do NOT translate.
+Name = Replay
+# Translators: Generic Name: "Replay is a...".
+GenericName = Video Aggregator
+# Translators: Comment: "Replay helps you...".
+Comment = Follow your favorite content creators
+TryExec = @command@
+Exec = @command@
+Terminal = false
+Categories = Network;Player;Feed;GNOME;
+# Translators: Keywords. End the string with ';'.
+Keywords = stream;watch;clips;browse;play;channel;library;
+StartupNotify = true
+SingleMainWindow = true
