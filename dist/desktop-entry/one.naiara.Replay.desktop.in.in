@@ -6,6 +6,7 @@ Name = Replay
 GenericName = Video Aggregator
 # Translators: Comment: "Replay helps you...".
 Comment = Follow your favorite content creators
+Icon = @icon@
 TryExec = @command@
 Exec = @command@
 Terminal = false

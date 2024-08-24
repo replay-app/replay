@@ -1,6 +1,6 @@
 desktop_file = i18n.merge_file(
   input: configure_file(
-    configuration: {'command': meson.project_name()},
+    configuration: {'command': meson.project_name(), 'icon': app_id},
     input: f'@rdnn_app_name@.desktop.in.in',
     output: f'@rdnn_app_name@.desktop.in',
   ),
