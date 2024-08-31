@@ -29,7 +29,11 @@ mod imp {
 
         fn startup(&self) {
             self.parent_startup();
+
             glib::set_application_name("Replay");
+
+            let style_manager = adw::StyleManager::default();
+            style_manager.set_color_scheme(adw::ColorScheme::PreferDark);
         }
     }
 
