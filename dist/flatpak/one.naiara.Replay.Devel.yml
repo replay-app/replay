@@ -2,7 +2,7 @@ id: one.naiara.Replay.Devel
 command: replay
 
 runtime: org.gnome.Platform
-runtime-version: "46"
+runtime-version: "47beta"
 sdk: org.gnome.Sdk
 
 sdk-extensions:
