@@ -26,6 +26,11 @@ mod imp {
 
             window.present();
         }
+
+        fn startup(&self) {
+            self.parent_startup();
+            glib::set_application_name("Replay");
+        }
     }
 
     impl GtkApplicationImpl for App {}
