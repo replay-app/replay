@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: replay\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-09-08 02:54-0300\n"
+"POT-Creation-Date: 2024-09-08 02:55-0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -55,6 +55,11 @@ msgstr ""
 #. Translators: Title for the "Liked Videos" page.
 #: src/liked_videos/liked_videos_model.rs:32
 msgid "Liked Videos"
+msgstr ""
+
+#. Translators: Title for the "Playlists" page.
+#: src/playlists/playlists_model.rs:32
+msgid "Playlists"
 msgstr ""
 
 #. Translators: Title for the "Subscriptions" page.

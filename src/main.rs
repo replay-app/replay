@@ -7,6 +7,7 @@ mod discover;
 mod favorites;
 mod history;
 mod liked_videos;
+mod playlists;
 mod prelude;
 mod shared;
 mod shell;

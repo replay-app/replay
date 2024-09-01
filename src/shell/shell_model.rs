@@ -48,6 +48,7 @@ mod imp {
                 rpy::FavoritesModel::new().upcast(),
                 rpy::HistoryModel::new().upcast(),
                 rpy::WatchLaterModel::new().upcast(),
+                rpy::PlaylistsModel::new().upcast(),
             ];
 
             pages.splice(0, 0, additions);

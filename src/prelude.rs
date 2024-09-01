@@ -8,6 +8,7 @@ pub mod rpy {
     pub use crate::favorites::*;
     pub use crate::history::*;
     pub use crate::liked_videos::*;
+    pub use crate::playlists::*;
     pub use crate::shared::{enums::*, models::PageModel};
     pub use crate::shell::*;
     pub use crate::subscriptions::*;
