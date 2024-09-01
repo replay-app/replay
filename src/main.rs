@@ -3,6 +3,7 @@ use gvdb_macros::include_gresource_from_dir;
 use crate::prelude::*;
 
 mod app;
+mod discover;
 mod prelude;
 mod shared;
 mod shell;

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: replay\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-08-24 20:05-0300\n"
+"POT-Creation-Date: 2024-09-08 02:41-0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -35,4 +35,9 @@ msgstr ""
 #. Translators: Keywords. End the string with ';'.
 #: dist/desktop-entry/one.naiara.Replay.desktop.in.in:16
 msgid "stream;watch;clips;browse;play;channel;library;"
+msgstr ""
+
+#. Translators: Title for the "Discover" page.
+#: src/discover/discover_model.rs:32
+msgid "Discover"
 msgstr ""

@@ -31,7 +31,18 @@ mod imp {
     }
 
     #[glib::derived_properties]
-    impl ObjectImpl for ShellModel {}
+    impl ObjectImpl for ShellModel {
+        fn constructed(&self) {
+            self.parent_constructed();
+
+            let pages = self.pages.borrow();
+            let pages = pages
+                .downcast_ref::<gio::ListStore>()
+                .expect("'pages' should be a 'gio::ListStore'");
+
+            pages.splice(0, 0, &[rpy::DiscoverModel::new()]);
+        }
+    }
 }
 
 glib::wrapper! {
