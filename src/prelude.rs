@@ -7,4 +7,5 @@ pub mod rpy {
     pub use crate::discover::*;
     pub use crate::shared::{enums::*, models::PageModel};
     pub use crate::shell::*;
+    pub use crate::trending::*;
 }

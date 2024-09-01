@@ -1,2 +1,3 @@
 dist/desktop-entry/one.naiara.Replay.desktop.in.in
 src/discover/discover_model.rs
+src/trending/trending_model.rs

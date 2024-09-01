@@ -8,6 +8,7 @@ mod prelude;
 mod shared;
 mod shell;
 mod subclass;
+mod trending;
 
 fn main() -> anyhow::Result<glib::ExitCode> {
     i18n::init()?;

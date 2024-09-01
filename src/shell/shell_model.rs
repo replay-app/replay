@@ -40,7 +40,12 @@ mod imp {
                 .downcast_ref::<gio::ListStore>()
                 .expect("'pages' should be a 'gio::ListStore'");
 
-            pages.splice(0, 0, &[rpy::DiscoverModel::new()]);
+            let additions: &[rpy::PageModel] = &[
+                rpy::DiscoverModel::new().upcast(),
+                rpy::TrendingModel::new().upcast(),
+            ];
+
+            pages.splice(0, 0, additions);
         }
     }
 }
