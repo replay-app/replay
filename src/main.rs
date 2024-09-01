@@ -4,6 +4,7 @@ use crate::prelude::*;
 
 mod app;
 mod discover;
+mod liked_videos;
 mod prelude;
 mod shared;
 mod shell;

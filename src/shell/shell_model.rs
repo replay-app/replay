@@ -44,6 +44,7 @@ mod imp {
                 rpy::DiscoverModel::new().upcast(),
                 rpy::TrendingModel::new().upcast(),
                 rpy::SubscriptionsModel::new().upcast(),
+                rpy::LikedVideosModel::new().upcast(),
             ];
 
             pages.splice(0, 0, additions);

@@ -1,4 +1,5 @@
 dist/desktop-entry/one.naiara.Replay.desktop.in.in
 src/discover/discover_model.rs
+src/liked_videos/liked_videos_model.rs
 src/subscriptions/subscriptions_model.rs
 src/trending/trending_model.rs
