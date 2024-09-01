@@ -21,7 +21,7 @@ mod imp {
         fn activate(&self) {
             let window = match self.obj().active_window() {
                 Some(window) => window,
-                None => rpy::ShellWindow::new(&*self.obj()).upcast(),
+                None => rpy::ShellWindow::new(&*self.obj(), &rpy::ShellModel::new()).upcast(),
             };
 
             window.present();

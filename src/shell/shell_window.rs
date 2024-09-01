@@ -1,14 +1,20 @@
+use std::cell::RefCell;
+
 use crate::prelude::*;
 use crate::subclass::prelude::*;
 
 mod imp {
     use super::*;
 
-    #[derive(Debug, Default, gtk::CompositeTemplate)]
+    #[derive(Debug, Default, glib::Properties, gtk::CompositeTemplate)]
+    #[properties(wrapper_type = super::ShellWindow)]
     #[template(file = "shell_window.ui")]
     pub struct ShellWindow {
         #[template_child]
         navigation_view: TemplateChild<adw::NavigationView>,
+
+        #[property(get, set, construct_only)]
+        model: RefCell<Option<rpy::ShellModel>>,
     }
 
     #[glib::object_subclass]
@@ -27,6 +33,7 @@ mod imp {
         }
     }
 
+    #[glib::derived_properties]
     impl ObjectImpl for ShellWindow {}
     impl WidgetImpl for ShellWindow {}
     impl WindowImpl for ShellWindow {}
@@ -42,7 +49,10 @@ glib::wrapper! {
 }
 
 impl ShellWindow {
-    pub fn new(app: &impl IsA<gtk::Application>) -> Self {
-        glib::Object::builder().property("application", app).build()
+    pub fn new(app: &impl IsA<gtk::Application>, model: &impl IsA<rpy::ShellModel>) -> Self {
+        glib::Object::builder()
+            .property("application", app)
+            .property("model", model)
+            .build()
     }
 }
