@@ -43,6 +43,7 @@ mod imp {
             let additions: &[rpy::PageModel] = &[
                 rpy::DiscoverModel::new().upcast(),
                 rpy::TrendingModel::new().upcast(),
+                rpy::SubscriptionsModel::new().upcast(),
             ];
 
             pages.splice(0, 0, additions);

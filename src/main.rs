@@ -8,6 +8,7 @@ mod prelude;
 mod shared;
 mod shell;
 mod subclass;
+mod subscriptions;
 mod trending;
 
 fn main() -> anyhow::Result<glib::ExitCode> {
