@@ -5,3 +5,4 @@ src/history/history_model.rs
 src/liked_videos/liked_videos_model.rs
 src/subscriptions/subscriptions_model.rs
 src/trending/trending_model.rs
+src/watch_later/watch_later_model.rs

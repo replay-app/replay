@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: replay\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-09-08 02:53-0300\n"
+"POT-Creation-Date: 2024-09-08 02:54-0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -65,4 +65,9 @@ msgstr ""
 #. Translators: Title for the "Trending" page.
 #: src/trending/trending_model.rs:32
 msgid "Trending"
+msgstr ""
+
+#. Translators: Title for the "Watch Later" page.
+#: src/watch_later/watch_later_model.rs:32
+msgid "Watch Later"
 msgstr ""

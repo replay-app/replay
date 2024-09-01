@@ -12,4 +12,5 @@ pub mod rpy {
     pub use crate::shell::*;
     pub use crate::subscriptions::*;
     pub use crate::trending::*;
+    pub use crate::watch_later::*;
 }

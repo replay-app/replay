@@ -13,6 +13,7 @@ mod shell;
 mod subclass;
 mod subscriptions;
 mod trending;
+mod watch_later;
 
 fn main() -> anyhow::Result<glib::ExitCode> {
     i18n::init()?;
