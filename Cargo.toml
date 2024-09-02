@@ -6,6 +6,7 @@
 [dependencies]
     anyhow = "1.0.86"
     default-env = "0.1.1"
+    gvdb-macros = "0.1.13"
 
     [dependencies.adw]
         version = "0.7.0"
@@ -29,3 +30,6 @@
         version = "0.9.0"
         features = ["v4_12"]
         package = "gtk4"
+
+[build-dependencies]
+    build-deps = "0.1.4"
