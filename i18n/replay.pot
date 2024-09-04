@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: replay\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-09-08 02:55-0300\n"
+"POT-Creation-Date: 2024-09-08 02:57-0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -60,6 +60,11 @@ msgstr ""
 #. Translators: Title for the "Playlists" page.
 #: src/playlists/playlists_model.rs:32
 msgid "Playlists"
+msgstr ""
+
+#. Translators: Title for the "Search" page.
+#: src/search/search_model.rs:32
+msgid "Search"
 msgstr ""
 
 #. Translators: Title for the "Subscriptions" page.

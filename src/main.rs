@@ -9,6 +9,7 @@ mod history;
 mod liked_videos;
 mod playlists;
 mod prelude;
+mod search;
 mod shared;
 mod shell;
 mod subclass;
