@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <interface>
 
-<requires lib="adw" version="1.4" />
-<requires lib="gtk" version="4.12" />
-
 <template class="RpyShellWindow" parent="AdwApplicationWindow">
   <property name="default-width">1020</property>
   <property name="default-height">720</property>
@@ -11,7 +8,29 @@
   <property name="height-request">294</property>
 
   <property name="content">
-    <object class="AdwNavigationView" id="navigation_view" />
+    <object class="AdwMultiLayoutView">
+
+      <child type="content">
+        <object class="AdwBin" />
+      </child>
+
+      <child>
+        <object class="AdwLayout">
+          <property name="name">desktop</property>
+
+          <property name="content">
+            <object class="RpyShellDesktopLayout">
+              <property name="model"
+                        bind-source="RpyShellWindow"
+                        bind-property="model"
+                        bind-flags="sync-create" />
+            </object>
+          </property>
+
+        </object>
+      </child>
+
+    </object>
   </property>
 
 </template>

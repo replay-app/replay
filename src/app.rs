@@ -34,11 +34,22 @@ mod imp {
 
             let style_manager = adw::StyleManager::default();
             style_manager.set_color_scheme(adw::ColorScheme::PreferDark);
+
+            App::init_widgets();
         }
     }
 
     impl GtkApplicationImpl for App {}
     impl AdwApplicationImpl for App {}
+
+    impl App {
+        fn init_widgets() {
+            rpy::NavigationSidebar::ensure_type();
+            rpy::NavigationSidebarHeader::ensure_type();
+            rpy::NavigationSidebarItem::ensure_type();
+            rpy::ShellDesktopLayout::ensure_type();
+        }
+    }
 }
 
 glib::wrapper! {

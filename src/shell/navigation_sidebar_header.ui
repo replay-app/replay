@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+
+<template class="RpyNavigationSidebarHeader" parent="GtkWidget">
+  
+  <property name="layout-manager">
+    <object class="GtkBinLayout" />
+  </property>
+
+  <child>
+    <object class="GtkLabel" id="label_widget">
+      <property name="xalign">0.0</property>
+      <property name="label"
+                bind-source="RpyNavigationSidebarHeader"
+                bind-property="label"
+                bind-flags="sync-create" />
+
+      <style>
+        <class name="caption-heading" />
+        <class name="dim-label" />
+      </style>
+
+    </object>
+  </child>
+
+</template>
+
+</interface>

@@ -10,9 +10,6 @@ mod imp {
     #[properties(wrapper_type = super::ShellWindow)]
     #[template(file = "shell_window.ui")]
     pub struct ShellWindow {
-        #[template_child]
-        navigation_view: TemplateChild<adw::NavigationView>,
-
         #[property(get, set, construct_only)]
         model: RefCell<Option<rpy::ShellModel>>,
     }

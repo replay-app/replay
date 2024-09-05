@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+
+<template class="RpyShellDesktopLayout" parent="GtkWidget">
+
+  <property name="layout-manager">
+    <object class="GtkBinLayout" />
+  </property>
+
+  <child>
+    <object class="AdwOverlaySplitView" id="split_view">
+      <property name="sidebar-width-fraction">0.2</property>
+  
+      <property name="sidebar">
+        <object class="AdwToolbarView">
+
+          <child type="top">
+            <object class="AdwHeaderBar" />
+          </child>
+
+          <property name="content">
+            <object class="RpyNavigationSidebar">
+              <property name="pages">
+                <object class="GtkFilterListModel">
+
+                  <binding name="model">
+                    <lookup name="pages" type="RpyShellModel">
+                      <lookup name="model">RpyShellDesktopLayout</lookup>
+                    </lookup>
+                  </binding>
+
+                  <property name="filter">
+                    <object class="GtkCustomFilter" id="nav_sidebar_filter" />
+                  </property>
+
+                </object>
+              </property>
+            </object>
+          </property>
+
+        </object>
+      </property>
+  
+      <property name="content">
+        <object class="AdwToolbarView">
+
+          <child type="top">
+            <object class="AdwHeaderBar" />
+          </child>
+
+          <property name="content">
+            <object class="AdwLayoutSlot">
+              <property name="id">content</property>
+            </object>
+          </property>
+
+        </object>
+      </property>
+  
+    </object>
+  </child>
+
+</template>
+
+</interface>

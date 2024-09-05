@@ -1,0 +1,8 @@
+rpy-navigation-sidebar .navigation-sidebar row > box {
+  border-spacing: 8px;
+}
+
+rpy-navigation-sidebar-header {
+  padding: 10px 0 5px 8px;
+  margin: 0 6px 2px;
+}
